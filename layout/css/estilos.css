@@ -9,12 +9,15 @@
 body {
 	font-family: Arial;
 	font-size: 16px;
-	background: #4a465b;
+	background: #DEB4B4;
 }
 
 .contenedor {
-	width: 1000px;
-	margin: 20px;
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	overflow: hidden;
+
 }
 
 header {
@@ -40,3 +43,97 @@ header nav ul li a:hover {
 	background: #000;
 	color: #fff;
 }
+
+.main {
+	width:70%;
+	background: #fff;
+	float: left;
+}
+
+.main .imagen {
+	width:100%;
+}
+
+.main .imagen img {
+	width:100%;
+	vertical-align: top;
+}
+
+.main .posts {
+	padding: 40px;
+}
+
+.main .posts article h2 {
+	margin-bottom:20px;
+	color: #424242;
+}
+
+.main .posts article p {
+	margin-bottom:10px;
+	line-height: 27px;
+}
+
+aside {
+	width: 30%;
+	background: #B7B9B6;
+	padding; 20px;
+	color: #000;
+	float: left;
+}
+
+aside .widget {
+	margin-bottom: 20px;
+}
+
+aside .widget .titulo {
+	color: #000;
+	border-bottom: 1px solid #fff;
+	margin-bottom:10px;
+}
+
+aside .widget ul {
+	list-style:none;
+}
+
+aside .widget ul li{
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	padding:10px 0;
+	text-align: center;
+}
+
+aside .widget ul li a{
+	color:#000;
+	text-decoration:none;
+	text-align: center;
+}
+
+aside .widget ul li a:hover{
+	color:#FFB3E8;
+}
+
+aside .widget p{
+	line-height:20px;
+}
+
+footer {
+	width:70%;
+	overflow:hidden;
+	background: #000;
+	color: #fff;
+	padding: 15px 0;
+	text-align: center;
+}
+
+@media screen and (max-width:800px){
+	.main {
+		width:100%;
+	}
+	aside {
+		width:100%;
+	}
+	footer {
+		width: 100%;
+	}
+}
+	
+	
